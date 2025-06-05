@@ -138,7 +138,12 @@
         //loadGeoJSON(<URL>);
 
         // Leaflet locationcontrol
-        L.control.locate().addTo(map);
+        L.control.locate({
+            strings: {
+                title:"Eigenen Standort anzeigen"
+            },
+            drawCircle: false
+        }).addTo(map);
 
     </script>
 </body>
